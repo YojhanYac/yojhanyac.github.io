@@ -1,0 +1,25 @@
+body {
+    display: flex;
+    justify-content: space-around;
+}
+
+#consola {
+    display: flex;
+    justify-content: space-around;
+    width: 95vw;
+}
+
+textarea {
+    width: 40%;
+    height: 95vh;
+}
+
+#opciones {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+#botonCopiar {
+    margin-top: 50px;
+}

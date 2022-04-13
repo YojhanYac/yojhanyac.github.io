@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Convertidor SMO</title>
+</head>
+<body>
+    <div id="consola">
+        <textarea name="" id="input1" cols="30" rows="10" placeholder="INGRESAR INPUT A CONVERTIR"></textarea>
+        <div id="opciones">
+            <h2>AGREGAR</h2>
+            <h3>Sin salto linea:</h3>
+            <button onclick="convertidor('agregarComillaYComa','false')">" y ,</button>
+            <button onclick="convertidor('agregarComillaYPuntoComa','false')">" y ;</button>
+            <button onclick="convertidor('agregarComillaSimpleYComa','false')">' y ,</button>
+            <button onclick="convertidor('agregarComillaSimpleYPuntoComa','false')">' y ;</button>
+            <button onclick="convertidor('agregarComa','false')">  ,  </button>
+            <button onclick="convertidor('agregarPuntoComa','false')">  ;  </button>
+            <h3>Con salto de linea:</h3>
+            <button onclick="convertidor('agregarComillaYComa','true')">" y ,</button>
+            <button onclick="convertidor('agregarComillaYPuntoComa','true')">" y ;</button>
+            <button onclick="convertidor('agregarComillaSimpleYComa','true')">' y ,</button>
+            <button onclick="convertidor('agregarComillaSimpleYPuntoComa','true')">' y ;</button>
+            <button onclick="convertidor('agregarComa','true')">  ,  </button>
+            <button onclick="convertidor('agregarPuntoComa','true')">  ;  </button>
+            <button onclick="copiarAlPortapapeles('output')" id="botonCopiar">COPIAR OUTPUT</button>
+        </div>
+        <textarea id="output" cols="30" rows="10" placeholder="OUTPUT CONVERTIDO"></textarea>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
