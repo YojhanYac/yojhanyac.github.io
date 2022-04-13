@@ -1,6 +1,6 @@
 function convertidor(opcion, salto) {
     
-    var input = document.getElementById("input1").value;
+    var input = document.getElementById("input").value;
     var output = document.getElementById("output").value;
 
     output = input.split(' ').join('');
@@ -89,5 +89,4 @@ function copiarAlPortapapeles(id_elemento) {
     aux.select();
     document.execCommand("copy");
     document.body.removeChild(aux);
-    // console.log("copiado");
 }

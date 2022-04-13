@@ -1,6 +1,26 @@
 body {
+    font-size : 17px ;
     display: flex;
     justify-content: space-around;
+}
+
+* {
+    background-color: rgb(171, 208, 55);
+    color: #171717;
+    font-weight: bold;
+}
+
+#input, #output {
+    background-color: #fff;
+    font-size: 16px;
+}
+
+button {
+    margin: 2px;
+    padding: 5px;
+    background: #3483fa;
+    color: #fbfcff;
+    border-radius: 5px;
 }
 
 #consola {
@@ -11,15 +31,17 @@ body {
 
 textarea {
     width: 40%;
-    height: 95vh;
+    height: 100%;
 }
 
 #opciones {
     display: flex;
     flex-direction: column;
     margin: 10px;
+    text-align: center;
 }
 
 #botonCopiar {
     margin-top: 50px;
+    margin-bottom: 50px;
 }
